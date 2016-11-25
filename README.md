@@ -162,7 +162,7 @@ plt.ylabel("Frequency Count")
 
 
 
-![png](output_9_1.png)
+![png](./images/output_9_1.png)
 
 
 
@@ -191,7 +191,7 @@ plt.ylabel("Frequency Count")
 
 
 
-![png](output_10_2.png)
+![png](./images/output_10_2.png)
 
 
 
@@ -213,7 +213,7 @@ pclass_plt.set_ylabel("Frequency Count")
 
 
 
-![png](output_11_1.png)
+![png](./images/output_11_1.png)
 
 
 
@@ -389,7 +389,7 @@ ax.text(0.5, 0.8, r'\$500 is an outlier, the average fare value is less than \$5
 
 
 
-![png](output_15_1.png)
+![png](./images/output_15_1.png)
 
 
 # Date Exploration 
@@ -435,7 +435,7 @@ print "Proportion of survived males is %s " %propotion_males_survived
 
 
 
-![png](output_18_1.png)
+![png](./images/output_18_1.png)
 
 
 From the above stack bar chart, we can say that females are more likely to survive that males.
@@ -480,7 +480,7 @@ show_var_mean(females_on_board_df,'Fare')
 
 
 
-![png](output_21_1.png)
+![png](./images/output_21_1.png)
 
 
 The average fare value for women on board is $48.0 . Also, the above bar chart shows that the highest proportion of  survived females had paid fare greater than or equal to $30. The values could change if we changed the fare categories ranges.
@@ -533,7 +533,7 @@ plt.ylabel("Frequency Count")
 
 
 
-![png](output_24_2.png)
+![png](./images/output_24_2.png)
 
 
 The average age for all females on board is about 28 years old and the average of age for survived females is 29 years. Also, the above age bar chart shows that most of survived females are in 20s or 30s of age.
