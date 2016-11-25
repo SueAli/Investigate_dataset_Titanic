@@ -1,6 +1,6 @@
 
 ## Project Description
-This project involves the use of NumPy, Pandas, MatPlotlib, and Python to analyze <a href="./titanic_data.csv"> Titanic</a> dataset. It also shows how to conduct data analysis process by:
+This project involves the use of NumPy, Pandas, MatPlotlib, and Python to analyze <a href="./titanic_data.csv"> Titanic</a> dataset. It also shows how to conduct data analysis process by:<br/>
 1- Defining the Question you want to answer by analyzing the data<br/>
 2- Data Wrangling: investigate the data and clean it<br/>
 3- Data Exploration: build intuition  about the data and find patterns <br/>
