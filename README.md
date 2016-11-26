@@ -1,6 +1,6 @@
 
 ## Project Description
-This project involves the use of NumPy, Pandas, MatPlotlib, and Python to analyze <a href="./titanic_data.csv"> Titanic</a> dataset. It also shows how to conduct data analysis process by:<br/>
+This project involves the use of NumPy, Pandas, MatPlotlib, and Python to analyze <a href="./titanic_data.csv"> Titanic</a> dataset. It also shows how to conduct data analysis process by:
 1- Defining the Question you want to answer by analyzing the data<br/>
 2- Data Wrangling: investigate the data and clean it<br/>
 3- Data Exploration: build intuition  about the data and find patterns <br/>
@@ -364,28 +364,30 @@ for index, passenger in titanic_df.iterrows():
 
 
 ```python
-fare_fig = plt.figure(figsize=(18, 6))
+fare_fig = plt.figure(figsize=(10, 6))
 fare_fig.suptitle("Passengers fare prices distribution",fontweight='bold')
 ax=fare_fig.add_subplot(111)
-
-ax.set_xlabel('Titanic Passengers')
-ax.set_ylabel('Fare Price')
-#ax.get_xaxis().set_visible(False)
-ax.boxplot(titanic_df['Fare'])
-ax.set_xticks([])
-ax.text(0.5, 0.8, r'\$500 is an outlier, the average fare value is less than \$50',
+ax.hist(titanic_df['Fare'],alpha=0.75)
+ax.set_xlabel('Fare Price')
+ax.set_ylabel('Frquency Count')
+ax.set_xticks([0,50,100,150,200,250,300,350,400,450,500,550,600,650])      
+ax.text(0.1, 0.8, r'Mean',
         horizontalalignment='right',
         verticalalignment='top',   transform=ax.transAxes, color = 'red' , fontsize='15')
 
+plt.axvline(titanic_df['Fare'].mean(), color='r', linestyle='dashed', linewidth=2)
 
-## AS we see in the below plotbox, there is some outliers such as the max fare value ($500)
+print "AS we see in the below histogram, the distribution is rightly skewed where the mean is less than 50. Passengers"
+print "withfare's value greater than $400 will not be omitted. Because, they represent 1st class passengers info that "
+print "we want to explore."
+## AS we see in the below histogram, the distribution is rightly skewed where the mean is less than 50. Passengers with
+## fare's value greater than $400 will not be omitted. Because, they represent 1st class passengers info that we want 
+## to explore.
 ```
 
-
-
-
-    <matplotlib.text.Text at 0x11a4ce890>
-
+    AS we see in the below histogram, the distribution is rightly skewed where the mean is less than 50. Passengers
+    withfare's value greater than $400 will not be omitted. Because, they represent 1st class passengers info that 
+    we want to explore.
 
 
 
@@ -398,7 +400,7 @@ After cleansing the data, let's explore the data patterns and find the expected 
 - What is the sex of the majority of survived people?
 - Are 1st class passengers more likely to survive than others?
 
-To answer the above questions: 
+To answer the questions above: 
 
 
 
